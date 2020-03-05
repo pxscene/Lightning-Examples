@@ -1,0 +1,15 @@
+{
+    "author": "Comcast",
+    "name": "HelloWorld",
+    "version": "1.0.0",
+    "dependencies": {
+        "wpe-lightning-sdk": "git+https://github.com/pxscene/Lightning-SDK.git#spark"
+    },
+    "scripts": {
+        "start": "npm run release-web-spark && npm run serve",
+        "serve": "cd dist/web-spark && http-server",
+        "release-web": "node ./node_modules/wpe-lightning-sdk/scripts/release-web.js",
+        "release-spark": "node ./node_modules/wpe-lightning-sdk/scripts/release-spark.js",
+        "release-web-spark": "node ./node_modules/wpe-lightning-sdk/scripts/release-web-spark.js"
+    }
+}
